@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/tasks.css">
+</head>
+<body>
+  {% load static %}
+<h1 >To_Do List<br> Create Your own Task </h1>
+
+<div class="Add_task"> Add your task
+<form method="post">
+    {% csrf_token %}
+   {{boxes}}
+<button style="font-size:1.2rem;" type="submit">Add</button>
+</form>
+    </div>
+   <div>
+       <ol id="flex">
+  {% for tasks in tasklist %}
+     <li> <div class="tasks">
+          Task:<span>{{task.pk}}</span>
+          <br>{{tasks.Title}}<br>
+          <br><span>{{tasks.Task}}</span><br>
+          <a href="{% url 'del'  tasks.pk %}"><button style="font-size:1.2rem;margin-bottom:2px;">Done</button></a>
+      </div> </li>
+{% endfor %}
+       </ol>
+  </div>
+</body>
+</html>

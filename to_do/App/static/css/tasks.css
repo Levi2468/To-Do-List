@@ -1,0 +1,53 @@
+body{
+background:Lightgreen;
+}
+
+h1{
+background:red;
+text-align:center;
+color:gold;
+padding:20px;
+font-size:3rem;
+margin:0;
+}
+.tasks{
+margin:20px;
+padding:10px;
+width:200px;
+position:relative;
+background:aqua;
+font-size:1.5rem;
+text-align:center;
+border: 2px outset red;
+overflow-y: auto;
+}
+
+.Add_task{
+margin:5%;
+width:20%;
+height:auto;
+background:yellow;
+font-size:2rem;
+text-align:center;
+border: 2px outset red;
+float:left;
+}
+span{
+background:pink;
+
+}
+#flex{
+display:flex;
+flex-wrap:wrap;
+justify-content: space-evenly;
+}
+
+textarea{
+font-size:1.2rem;
+width:70%;
+}
+input[type=text]{
+margin-top:10px;
+font-size:1.2rem;
+
+}

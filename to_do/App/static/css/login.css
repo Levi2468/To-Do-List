@@ -1,0 +1,56 @@
+body{
+height:650px;
+background:url('../images/login.jpg');
+background-size: 100% 100%;
+background-repeat:no-repeat;
+background-position: center
+position:relative;
+}
+
+#login{
+margin-left:30%;
+width:25%;
+min-width:400px;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+position:relative;
+padding:33px;
+margin-top:15%;
+}
+
+
+label{
+font-size:1.5rem;
+margin:22px;
+}
+
+
+#id_username,#id_password,#use,#pwd{
+font-size:1.7rem;
+margin:22px;
+}
+#submit{
+margin-top:5px;
+font-size:1.5rem;
+font-family:TimesNewRoman;
+padding:5px;
+}
+#submit:hover{
+background:black;
+color:white;
+}
+#sub{
+font-size:1.5rem;
+font-family:TimesNewRoman;
+padding:5px;
+}
+#sub:hover{
+background:black;
+color:white;
+}
+
+#subtopic{
+color:gold;
+font-size:2rem;
+}
